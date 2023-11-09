@@ -66,7 +66,7 @@ const scrapper = async () => {
     fs.writeFileSync('product_sever.json', json, 'utf-8');
     console.log('Data scraping completed');
     await browser.close();
-    rl.close(); // Close the readline interface
+    rl.close(); 
   });
 };
 scrapper();
